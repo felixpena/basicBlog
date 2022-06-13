@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Blog minimalista</h1>
+
+<p>Bienvenido a <em>Coder Blog</em>, un sitio web de blogs Django muy básico desarrollado como una actividad académica.</p>
+
+<h2>Modelo UML</h2>
+<p>A continuación se muestra un diagrama UML de la estructura del modelo Django del sitio.</p>
+
+<div>
+{% load static %}
+<img src="{% static "images/Diagram 2022-06-12 00-28-12.png" %}" alt="My image" style="width:480px;"/>
+</div>  
+
+{% endblock %}

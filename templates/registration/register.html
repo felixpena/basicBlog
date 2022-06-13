@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Registro</h1>
+
+{{errors}}
+{% if errors %}
+<p>Por favor, inténtalo de nuevo.</p>
+{% endif %}
+<br><br><br>
+<form method="POST" action="{% url 'register' %}">
+{% csrf_token %}
+<table>
+<tr>
+    <td>{{ form.as_table }}</td>
+</tr>
+</table>
+<input type="submit" value="Registro" />
+</form>
+{% endblock %}
